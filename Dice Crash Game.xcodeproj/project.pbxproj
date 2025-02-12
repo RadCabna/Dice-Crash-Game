@@ -8,18 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		DDEC2D2B2D5BBDA1003719A0 /* Dice_Crash_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D2A2D5BBDA1003719A0 /* Dice_Crash_GameApp.swift */; };
-		DDEC2D2D2D5BBDA1003719A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D2C2D5BBDA1003719A0 /* ContentView.swift */; };
 		DDEC2D2F2D5BBDA2003719A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEC2D2E2D5BBDA2003719A0 /* Assets.xcassets */; };
 		DDEC2D332D5BBDA2003719A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEC2D322D5BBDA2003719A0 /* Preview Assets.xcassets */; };
+		DDEC2D412D5BBEAC003719A0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D402D5BBEAC003719A0 /* Coordinator.swift */; };
+		DDEC2D432D5BBEBF003719A0 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D422D5BBEBF003719A0 /* Loading.swift */; };
+		DDEC2D452D5BBECB003719A0 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D442D5BBECB003719A0 /* Menu.swift */; };
+		DDEC2D472D5BBED5003719A0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D462D5BBED5003719A0 /* Game.swift */; };
+		DDEC2D492D5BBF6C003719A0 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D482D5BBF6C003719A0 /* Background.swift */; };
+		DDEC2D4B2D5BC0DF003719A0 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D4A2D5BC0DF003719A0 /* Controller.swift */; };
+		DDEC2D4D2D5BC8EF003719A0 /* drukwidecyr-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DDEC2D4C2D5BC8EF003719A0 /* drukwidecyr-bold.otf */; };
+		DDEC2D502D5CF07B003719A0 /* SizeExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D4F2D5CF07B003719A0 /* SizeExtention.swift */; };
+		DDEC2D522D5CF79D003719A0 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D512D5CF79D003719A0 /* Options.swift */; };
+		DDEC2D542D5CF7A6003719A0 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D532D5CF7A6003719A0 /* Info.swift */; };
+		DDEC2D562D5CF926003719A0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D552D5CF926003719A0 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DDEC2D272D5BBDA1003719A0 /* Dice Crash Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dice Crash Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEC2D2A2D5BBDA1003719A0 /* Dice_Crash_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_Crash_GameApp.swift; sourceTree = "<group>"; };
-		DDEC2D2C2D5BBDA1003719A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DDEC2D2E2D5BBDA2003719A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDEC2D302D5BBDA2003719A0 /* Dice_Crash_Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dice_Crash_Game.entitlements; sourceTree = "<group>"; };
 		DDEC2D322D5BBDA2003719A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDEC2D402D5BBEAC003719A0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DDEC2D422D5BBEBF003719A0 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		DDEC2D442D5BBECB003719A0 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		DDEC2D462D5BBED5003719A0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		DDEC2D482D5BBF6C003719A0 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		DDEC2D4A2D5BC0DF003719A0 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		DDEC2D4C2D5BC8EF003719A0 /* drukwidecyr-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "drukwidecyr-bold.otf"; sourceTree = "<group>"; };
+		DDEC2D4E2D5BC917003719A0 /* Dice-Crash-Game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Dice-Crash-Game-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DDEC2D4F2D5CF07B003719A0 /* SizeExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeExtention.swift; sourceTree = "<group>"; };
+		DDEC2D512D5CF79D003719A0 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		DDEC2D532D5CF7A6003719A0 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		DDEC2D552D5CF926003719A0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +73,15 @@
 		DDEC2D292D5BBDA1003719A0 /* Dice Crash Game */ = {
 			isa = PBXGroup;
 			children = (
+				DDEC2D4E2D5BC917003719A0 /* Dice-Crash-Game-Info.plist */,
 				DDEC2D2A2D5BBDA1003719A0 /* Dice_Crash_GameApp.swift */,
-				DDEC2D2C2D5BBDA1003719A0 /* ContentView.swift */,
+				DDEC2D392D5BBDB0003719A0 /* Views */,
+				DDEC2D3A2D5BBDC0003719A0 /* SubViews */,
+				DDEC2D3B2D5BBDD1003719A0 /* Models */,
+				DDEC2D3C2D5BBE2D003719A0 /* Fonts */,
+				DDEC2D3D2D5BBE33003719A0 /* Extentions */,
+				DDEC2D3E2D5BBE4A003719A0 /* Coordinator */,
+				DDEC2D3F2D5BBE90003719A0 /* Sounds */,
 				DDEC2D2E2D5BBDA2003719A0 /* Assets.xcassets */,
 				DDEC2D302D5BBDA2003719A0 /* Dice_Crash_Game.entitlements */,
 				DDEC2D312D5BBDA2003719A0 /* Preview Content */,
@@ -67,6 +95,66 @@
 				DDEC2D322D5BBDA2003719A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDEC2D392D5BBDB0003719A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC2D422D5BBEBF003719A0 /* Loading.swift */,
+				DDEC2D442D5BBECB003719A0 /* Menu.swift */,
+				DDEC2D462D5BBED5003719A0 /* Game.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDEC2D3A2D5BBDC0003719A0 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC2D482D5BBF6C003719A0 /* Background.swift */,
+				DDEC2D4A2D5BC0DF003719A0 /* Controller.swift */,
+				DDEC2D512D5CF79D003719A0 /* Options.swift */,
+				DDEC2D532D5CF7A6003719A0 /* Info.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		DDEC2D3B2D5BBDD1003719A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC2D552D5CF926003719A0 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDEC2D3C2D5BBE2D003719A0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC2D4C2D5BC8EF003719A0 /* drukwidecyr-bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DDEC2D3D2D5BBE33003719A0 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC2D4F2D5CF07B003719A0 /* SizeExtention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		DDEC2D3E2D5BBE4A003719A0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC2D402D5BBEAC003719A0 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DDEC2D3F2D5BBE90003719A0 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDEC2D332D5BBDA2003719A0 /* Preview Assets.xcassets in Resources */,
+				DDEC2D4D2D5BC8EF003719A0 /* drukwidecyr-bold.otf in Resources */,
 				DDEC2D2F2D5BBDA2003719A0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +228,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDEC2D2D2D5BBDA1003719A0 /* ContentView.swift in Sources */,
+				DDEC2D472D5BBED5003719A0 /* Game.swift in Sources */,
 				DDEC2D2B2D5BBDA1003719A0 /* Dice_Crash_GameApp.swift in Sources */,
+				DDEC2D432D5BBEBF003719A0 /* Loading.swift in Sources */,
+				DDEC2D542D5CF7A6003719A0 /* Info.swift in Sources */,
+				DDEC2D412D5BBEAC003719A0 /* Coordinator.swift in Sources */,
+				DDEC2D522D5CF79D003719A0 /* Options.swift in Sources */,
+				DDEC2D452D5BBECB003719A0 /* Menu.swift in Sources */,
+				DDEC2D492D5BBF6C003719A0 /* Background.swift in Sources */,
+				DDEC2D562D5CF926003719A0 /* Model.swift in Sources */,
+				DDEC2D4B2D5BC0DF003719A0 /* Controller.swift in Sources */,
+				DDEC2D502D5CF07B003719A0 /* SizeExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +372,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dice-Crash-Game-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -284,7 +383,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -292,7 +391,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "f1.Dice-Crash-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,6 +412,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dice-Crash-Game-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -322,7 +423,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -330,7 +431,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "f1.Dice-Crash-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
