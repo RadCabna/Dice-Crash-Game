@@ -65,61 +65,61 @@ class Arrays {
         ]
     
     static var rectanglesOnGameField: [[Thunder]] = [
-        [Thunder(positionX: -138, positionY: -138), Thunder(positionX: 0, positionY: -138), Thunder(positionX: 138, positionY: -138)],
-        [Thunder(positionX: -100, positionY: -100), Thunder(positionX: 0, positionY: -100), Thunder(positionX: 100, positionY: -100)],
-        [Thunder(positionX: -63, positionY: -63), Thunder(positionX: 0, positionY: -63), Thunder(positionX: 63, positionY: -63)],
+        [Thunder(positionX: -142, positionY: -142), Thunder(positionX: 0, positionY: -142), Thunder(positionX: 142, positionY: -142)],
+        [Thunder(positionX: -102, positionY: -102), Thunder(positionX: 0, positionY: -102), Thunder(positionX: 102, positionY: -102)],
+        [Thunder(positionX: -65, positionY: -65), Thunder(positionX: 0, positionY: -65), Thunder(positionX: 65, positionY: -65)],
         
-        [Thunder(positionX: -138, positionY: -0), Thunder(positionX: -100, positionY: -0), Thunder(positionX: -63, positionY: -0)],
-        [Thunder(positionX: 63, positionY: -0), Thunder(positionX: 100, positionY: -0), Thunder(positionX: 138, positionY: -0)],
+        [Thunder(positionX: -142, positionY: 2), Thunder(positionX: -102, positionY: 2), Thunder(positionX: -65, positionY: 2)],
+        [Thunder(positionX: 65, positionY: 2), Thunder(positionX: 102, positionY: 2), Thunder(positionX: 142, positionY: 2)],
         
-        [Thunder(positionX: -63, positionY: 63), Thunder(positionX: 0, positionY: 63), Thunder(positionX: 63, positionY: 63)],
-        [Thunder(positionX: -100, positionY: 100), Thunder(positionX: 0, positionY: 100), Thunder(positionX: 100, positionY: 100)],
-        [Thunder(positionX: -138, positionY: 138), Thunder(positionX: 0, positionY: 138), Thunder(positionX: 138, positionY: 138)]
+        [Thunder(positionX: -65, positionY: 65), Thunder(positionX: 0, positionY: 65), Thunder(positionX: 65, positionY: 65)],
+        [Thunder(positionX: -102, positionY: 102), Thunder(positionX: 0, positionY: 102), Thunder(positionX: 102, positionY: 102)],
+        [Thunder(positionX: -142, positionY: 142), Thunder(positionX: 0, positionY: 142), Thunder(positionX: 142, positionY: 142)]
     ]
     
     static var blueLinesOnGameField: [[Lines]] = [
-    [Lines(itemName: "blueVertical1", positionX: -138, positionY: 0), Lines(itemName: "blueVertical2", positionX: -100, positionY: 0), Lines(itemName: "blueVertical3", positionX: -63, positionY: 0),],
-    [Lines(itemName: "blueVertical1", positionX: 138, positionY: 0), Lines(itemName: "blueVertical2", positionX:100, positionY: 0), Lines(itemName: "blueVertical3", positionX: 63, positionY: 0)],
-    [Lines(itemName: "blueVertical4", positionX: 0, positionY: -100), Lines(itemName: "blueVertical4", positionX: 0, positionY: 100)],
-    [Lines(itemName: "blueHorizontal1", positionX: 0, positionY: -138), Lines(itemName: "blueHorizontal2", positionX: 0, positionY: -100), Lines(itemName: "blueHorizontal3", positionX: 0, positionY: -63)],
-    [Lines(itemName: "blueHorizontal1", positionX: 0, positionY: 138), Lines(itemName: "blueHorizontal2", positionX: 0, positionY: 100), Lines(itemName: "blueHorizontal3", positionX: 0, positionY: 63)],
-    [Lines(itemName: "blueHorizontal4", positionX: -100, positionY: 0), Lines(itemName: "blueHorizontal4", positionX: 100, positionY: 0)]
+    [Lines(itemName: "blueVertical1", positionX: -142, positionY: 0), Lines(itemName: "blueVertical2", positionX: -102, positionY: 0), Lines(itemName: "blueVertical3", positionX: -65, positionY: 0),],
+    [Lines(itemName: "blueVertical1", positionX: 142, positionY: 0), Lines(itemName: "blueVertical2", positionX:102, positionY: 0), Lines(itemName: "blueVertical3", positionX: 65, positionY: 0)],
+    [Lines(itemName: "blueVertical4", positionX: 0, positionY: -102), Lines(itemName: "blueVertical4", positionX: 0, positionY: 102)],
+    [Lines(itemName: "blueHorizontal1", positionX: 0, positionY: -142), Lines(itemName: "blueHorizontal2", positionX: 0, positionY: -102), Lines(itemName: "blueHorizontal3", positionX: 0, positionY: -65)],
+    [Lines(itemName: "blueHorizontal1", positionX: 0, positionY: 142), Lines(itemName: "blueHorizontal2", positionX: 0, positionY: 102), Lines(itemName: "blueHorizontal3", positionX: 0, positionY: 65)],
+    [Lines(itemName: "blueHorizontal4", positionX: -102, positionY: 2), Lines(itemName: "blueHorizontal4", positionX: 102, positionY: 2)]
     ]
     
     static var redLinesOnGameField: [[Lines]] = [
-    [Lines(itemName: "redVertical1", positionX: -138, positionY: 0), Lines(itemName: "redVertical2", positionX: -100, positionY: 0), Lines(itemName: "redVertical3", positionX: -63, positionY: 0),],
-    [Lines(itemName: "redVertical1", positionX: 138, positionY: 0), Lines(itemName: "redVertical2", positionX:100, positionY: 0), Lines(itemName: "redVertical3", positionX: 63, positionY: 0)],
-    [Lines(itemName: "redVertical4", positionX: 0, positionY: -100), Lines(itemName: "redVertical4", positionX: 0, positionY: 100)],
-    [Lines(itemName: "redHorizontal1", positionX: 0, positionY: -138), Lines(itemName: "redHorizontal2", positionX: 0, positionY: -100), Lines(itemName: "redHorizontal3", positionX: 0, positionY: -63)],
-    [Lines(itemName: "redHorizontal1", positionX: 0, positionY: 138), Lines(itemName: "redHorizontal2", positionX: 0, positionY: 100), Lines(itemName: "redHorizontal3", positionX: 0, positionY: 63)],
-    [Lines(itemName: "redHorizontal4", positionX: -100, positionY: 0), Lines(itemName: "redHorizontal4", positionX: 100, positionY: 0)]
+    [Lines(itemName: "redVertical1", positionX: -142, positionY: 0), Lines(itemName: "redVertical2", positionX: -102, positionY: 0), Lines(itemName: "redVertical3", positionX: -65, positionY: 0),],
+    [Lines(itemName: "redVertical1", positionX: 142, positionY: 0), Lines(itemName: "redVertical2", positionX:102, positionY: 0), Lines(itemName: "redVertical3", positionX: 65, positionY: 0)],
+    [Lines(itemName: "redVertical4", positionX: 0, positionY: -102), Lines(itemName: "redVertical4", positionX: 0, positionY: 102)],
+    [Lines(itemName: "redHorizontal1", positionX: 0, positionY: -142), Lines(itemName: "redHorizontal2", positionX: 0, positionY: -102), Lines(itemName: "redHorizontal3", positionX: 0, positionY: -65)],
+    [Lines(itemName: "redHorizontal1", positionX: 0, positionY: 142), Lines(itemName: "redHorizontal2", positionX: 0, positionY: 102), Lines(itemName: "redHorizontal3", positionX: 0, positionY: 65)],
+    [Lines(itemName: "redHorizontal4", positionX: -102, positionY: 0), Lines(itemName: "redHorizontal4", positionX: 102, positionY: 0)]
     ]
     
     static var yellowLinesOnGameField: [[Lines]] = [
-    [Lines(itemName: "yellowVertical1", positionX: -138, positionY: 0), Lines(itemName: "yellowVertical2", positionX: -100, positionY: 0), Lines(itemName: "yellowVertical3", positionX: -63, positionY: 0),],
-    [Lines(itemName: "yellowVertical1", positionX: 138, positionY: 0), Lines(itemName: "yellowVertical2", positionX:100, positionY: 0), Lines(itemName: "yellowVertical3", positionX: 63, positionY: 0)],
-    [Lines(itemName: "yellowVertical4", positionX: 0, positionY: -100), Lines(itemName: "yellowVertical4", positionX: 0, positionY: 100)],
-    [Lines(itemName: "yellowHorizontal1", positionX: 0, positionY: -138), Lines(itemName: "yellowHorizontal2", positionX: 0, positionY: -100), Lines(itemName: "yellowHorizontal3", positionX: 0, positionY: -63)],
-    [Lines(itemName: "yellowHorizontal1", positionX: 0, positionY: 138), Lines(itemName: "yellowHorizontal2", positionX: 0, positionY: 100), Lines(itemName: "yellowHorizontal3", positionX: 0, positionY: 63)],
-    [Lines(itemName: "yellowHorizontal4", positionX: -100, positionY: 0), Lines(itemName: "yellowHorizontal4", positionX: 100, positionY: 0)]
+    [Lines(itemName: "yellowVertical1", positionX: -142, positionY: 0), Lines(itemName: "yellowVertical2", positionX: -102, positionY: 0), Lines(itemName: "yellowVertical3", positionX: -65, positionY: 0),],
+    [Lines(itemName: "yellowVertical1", positionX: 142, positionY: 0), Lines(itemName: "yellowVertical2", positionX:102, positionY: 0), Lines(itemName: "yellowVertical3", positionX: 65, positionY: 0)],
+    [Lines(itemName: "yellowVertical4", positionX: 0, positionY: -102), Lines(itemName: "yellowVertical4", positionX: 0, positionY: 102)],
+    [Lines(itemName: "yellowHorizontal1", positionX: 0, positionY: -142), Lines(itemName: "yellowHorizontal2", positionX: 0, positionY: -102), Lines(itemName: "yellowHorizontal3", positionX: 0, positionY: -65)],
+    [Lines(itemName: "yellowHorizontal1", positionX: 0, positionY: 142), Lines(itemName: "yellowHorizontal2", positionX: 0, positionY: 102), Lines(itemName: "yellowHorizontal3", positionX: 0, positionY: 65)],
+    [Lines(itemName: "yellowHorizontal4", positionX: -102, positionY: 0), Lines(itemName: "yellowHorizontal4", positionX: 102, positionY: 0)]
     ]
     
     static var violetLinesOnGameField: [[Lines]] = [
-    [Lines(itemName: "violetVertical1", positionX: -138, positionY: 0), Lines(itemName: "violetVertical2", positionX: -100, positionY: 0), Lines(itemName: "violetVertical3", positionX: -63, positionY: 0),],
-    [Lines(itemName: "violetVertical1", positionX: 138, positionY: 0), Lines(itemName: "violetVertical2", positionX:100, positionY: 0), Lines(itemName: "violetVertical3", positionX: 63, positionY: 0)],
-    [Lines(itemName: "violetVertical4", positionX: 0, positionY: -100), Lines(itemName: "violetVertical4", positionX: 0, positionY: 100)],
-    [Lines(itemName: "violetHorizontal1", positionX: 0, positionY: -138), Lines(itemName: "violetHorizontal2", positionX: 0, positionY: -100), Lines(itemName: "violetHorizontal3", positionX: 0, positionY: -63)],
-    [Lines(itemName: "violetHorizontal1", positionX: 0, positionY: 138), Lines(itemName: "violetHorizontal2", positionX: 0, positionY: 100), Lines(itemName: "violetHorizontal3", positionX: 0, positionY: 63)],
-    [Lines(itemName: "violetHorizontal4", positionX: -100, positionY: 0), Lines(itemName: "violetHorizontal4", positionX: 100, positionY: 0)]
+    [Lines(itemName: "violetVertical1", positionX: -142, positionY: 0), Lines(itemName: "violetVertical2", positionX: -102, positionY: 0), Lines(itemName: "violetVertical3", positionX: -65, positionY: 0),],
+    [Lines(itemName: "violetVertical1", positionX: 142, positionY: 0), Lines(itemName: "violetVertical2", positionX:102, positionY: 0), Lines(itemName: "violetVertical3", positionX: 65, positionY: 0)],
+    [Lines(itemName: "violetVertical4", positionX: 0, positionY: -102), Lines(itemName: "violetVertical4", positionX: 0, positionY: 102)],
+    [Lines(itemName: "violetHorizontal1", positionX: 0, positionY: -142), Lines(itemName: "violetHorizontal2", positionX: 0, positionY: -102), Lines(itemName: "violetHorizontal3", positionX: 0, positionY: -65)],
+    [Lines(itemName: "violetHorizontal1", positionX: 0, positionY: 142), Lines(itemName: "violetHorizontal2", positionX: 0, positionY: 102), Lines(itemName: "violetHorizontal3", positionX: 0, positionY: 65)],
+    [Lines(itemName: "violetHorizontal4", positionX: -102, positionY: 0), Lines(itemName: "violetHorizontal4", positionX: 102, positionY: 0)]
     ]
     
     static var lightBlueLinesOnGameField: [[Lines]] = [
-    [Lines(itemName: "lightBlueVertical1", positionX: -138, positionY: 0), Lines(itemName: "lightBlueVertical2", positionX: -100, positionY: 0), Lines(itemName: "lightBlueVertical3", positionX: -63, positionY: 0),],
-    [Lines(itemName: "lightBlueVertical1", positionX: 138, positionY: 0), Lines(itemName: "lightBlueVertical2", positionX:100, positionY: 0), Lines(itemName: "lightBlueVertical3", positionX: 63, positionY: 0)],
-    [Lines(itemName: "lightBlueVertical4", positionX: 0, positionY: -100), Lines(itemName: "lightBlueVertical4", positionX: 0, positionY: 100)],
-    [Lines(itemName: "lightBlueHorizontal1", positionX: 0, positionY: -138), Lines(itemName: "lightBlueHorizontal2", positionX: 0, positionY: -100), Lines(itemName: "lightBlueHorizontal3", positionX: 0, positionY: -63)],
-    [Lines(itemName: "lightBlueHorizontal1", positionX: 0, positionY: 138), Lines(itemName: "lightBlueHorizontal2", positionX: 0, positionY: 100), Lines(itemName: "lightBlueHorizontal3", positionX: 0, positionY: 63)],
-    [Lines(itemName: "lightBlueHorizontal4", positionX: -100, positionY: 0), Lines(itemName: "lightBlueHorizontal4", positionX: 100, positionY: 0)]
+    [Lines(itemName: "lightBlueVertical1", positionX: -142, positionY: 0), Lines(itemName: "lightBlueVertical2", positionX: -102, positionY: 0), Lines(itemName: "lightBlueVertical3", positionX: -65, positionY: 0),],
+    [Lines(itemName: "lightBlueVertical1", positionX: 142, positionY: 0), Lines(itemName: "lightBlueVertical2", positionX:102, positionY: 0), Lines(itemName: "lightBlueVertical3", positionX: 65, positionY: 0)],
+    [Lines(itemName: "lightBlueVertical4", positionX: 0, positionY: -102), Lines(itemName: "lightBlueVertical4", positionX: 0, positionY: 102)],
+    [Lines(itemName: "lightBlueHorizontal1", positionX: 0, positionY: -142), Lines(itemName: "lightBlueHorizontal2", positionX: 0, positionY: -102), Lines(itemName: "lightBlueHorizontal3", positionX: 0, positionY: -65)],
+    [Lines(itemName: "lightBlueHorizontal1", positionX: 0, positionY: 142), Lines(itemName: "lightBlueHorizontal2", positionX: 0, positionY: 102), Lines(itemName: "lightBlueHorizontal3", positionX: 0, positionY: 65)],
+    [Lines(itemName: "lightBlueHorizontal4", positionX: -102, positionY: 0), Lines(itemName: "lightBlueHorizontal4", positionX: 102, positionY: 0)]
     ]
 }
 
