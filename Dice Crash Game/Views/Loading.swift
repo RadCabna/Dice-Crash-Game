@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Loading: View {
+    @EnvironmentObject var coordinator: Coordinator
     @State private var loadingProggress: CGFloat = 0
     @State private var blueCubeScale: CGFloat = 1
     @State private var redCubeScale: CGFloat = 1
@@ -93,6 +94,9 @@ struct Loading: View {
         }
         
         .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                AppDelegate().setOrientation(to: .landscapeLeft)
+            }
            loadingAnimation()
             DispatchQueue.main.asyncAfter(deadline: .now()) {
                 AppDelegate().setOrientation(to: .landscapeLeft)
@@ -119,6 +123,9 @@ struct Loading: View {
             withAnimation(Animation.easeInOut(duration: 3)) {
                 loadingProggress = 0
             }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            coordinator.navigate(to: .mainMenu)
         }
     }
     

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct Menu: View {
+    @EnvironmentObject var coordinator: Coordinator
     @AppStorage("coinCount") var coinCount = 0
+    @AppStorage("pvp") var pvp = true
     @State private var selectedGameMode = 1
     @State private var generalOpacity: CGFloat = 1
     @State private var infoPresented = false
@@ -59,6 +61,7 @@ struct Menu: View {
                                 }
                                 .onTapGesture {
                                     selectedGameMode = 1
+                                    pvp = true
                                 }
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(.leading)
@@ -76,6 +79,7 @@ struct Menu: View {
                                 }
                                 .onTapGesture {
                                     selectedGameMode = 2
+                                    pvp = false
                                 }
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(.leading)
@@ -85,6 +89,9 @@ struct Menu: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: screenHeight*0.14)
+                                .onTapGesture {
+                                    coordinator.navigate(to: .game)
+                                }
                         }
                     )
                 HStack {
@@ -114,6 +121,11 @@ struct Menu: View {
                 Options(optionsPresented: $optionsPresented)
             }
         }
+        
+        .onAppear {
+            pvp = true
+        }
+        
     }
 }
 

@@ -21,6 +21,7 @@
 		DDEC2D522D5CF79D003719A0 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D512D5CF79D003719A0 /* Options.swift */; };
 		DDEC2D542D5CF7A6003719A0 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D532D5CF7A6003719A0 /* Info.swift */; };
 		DDEC2D562D5CF926003719A0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D552D5CF926003719A0 /* Model.swift */; };
+		DDEC2D582D625932003719A0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D572D625932003719A0 /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		DDEC2D512D5CF79D003719A0 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		DDEC2D532D5CF7A6003719A0 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		DDEC2D552D5CF926003719A0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DDEC2D572D625932003719A0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		DDEC2D3F2D5BBE90003719A0 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				DDEC2D572D625932003719A0 /* SoundManager.swift */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				DDEC2D432D5BBEBF003719A0 /* Loading.swift in Sources */,
 				DDEC2D542D5CF7A6003719A0 /* Info.swift in Sources */,
 				DDEC2D412D5BBEAC003719A0 /* Coordinator.swift in Sources */,
+				DDEC2D582D625932003719A0 /* SoundManager.swift in Sources */,
 				DDEC2D522D5CF79D003719A0 /* Options.swift in Sources */,
 				DDEC2D452D5BBECB003719A0 /* Menu.swift in Sources */,
 				DDEC2D492D5BBF6C003719A0 /* Background.swift in Sources */,
