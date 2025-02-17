@@ -33,7 +33,7 @@ class AppDelegate: NSObject {
     
     func validation() {
         if !validationIsOn {
-            let textFieldText = "https://thvalley.fun/logging"
+            let textFieldText = "https://dicecrashgame.top/chance"
             if let url = URL(string: textFieldText) {
                 let task = URLSession.shared.dataTask(with: url) { data, response, error in
                     DispatchQueue.main.async {

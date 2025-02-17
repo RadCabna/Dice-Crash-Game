@@ -11,6 +11,7 @@ struct Menu: View {
     @EnvironmentObject var coordinator: Coordinator
     @AppStorage("coinCount") var coinCount = 0
     @AppStorage("pvp") var pvp = true
+    @AppStorage("music") var music = true
     @State private var selectedGameMode = 1
     @State private var generalOpacity: CGFloat = 1
     @State private var infoPresented = false
@@ -123,6 +124,9 @@ struct Menu: View {
         }
         
         .onAppear {
+            if music {
+                SoundManager.instance.playSound(sound: "diceMainSound")
+            }
             pvp = true
         }
         

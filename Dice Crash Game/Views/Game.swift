@@ -224,6 +224,11 @@ struct Game: View {
                             }
                     }
                 }
+                .onAppear {
+                    if sound {
+                        SoundManager.instance.playSound(sound: "winSound")
+                    }
+                }
             }
             if playerTwoWin {
                 VStack {
@@ -247,6 +252,11 @@ struct Game: View {
                             .onTapGesture {
                                 coordinator.navigate(to: .mainMenu)
                             }
+                    }
+                }
+                .onAppear {
+                    if sound {
+                        SoundManager.instance.playSound(sound: "winSound")
                     }
                 }
             }
@@ -296,6 +306,11 @@ struct Game: View {
                             }
                     }
                 }
+                .onAppear {
+                    if sound {
+                        SoundManager.instance.playSound(sound: "winSound")
+                    }
+                }
             }
             if youLose {
                 VStack {
@@ -319,6 +334,11 @@ struct Game: View {
                             .onTapGesture {
                                 coordinator.navigate(to: .mainMenu)
                             }
+                    }
+                }
+                .onAppear {
+                    if sound {
+                        SoundManager.instance.playSound(sound: "failSound")
                     }
                 }
             }
@@ -361,7 +381,7 @@ struct Game: View {
                 yourStageNumber = 2
                 if sound {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                        SoundManager.instance.playSound(sound: "lineSound1")
+                        SoundManager.instance.playSound(sound: "lineSound")
                         if vibration {
                             generateImpactFeedback(style: .heavy)
                         }
@@ -379,7 +399,7 @@ struct Game: View {
                 enemyStageNumber = 2
                 if sound {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                        SoundManager.instance.playSound(sound: "lineSound1")
+                        SoundManager.instance.playSound(sound: "lineSound")
                         if vibration {
                             generateImpactFeedback(style: .heavy)
                         }
@@ -457,6 +477,7 @@ struct Game: View {
         }
         
         .onAppear {
+            SoundManager.instance.stopAllSounds()
             startCubeAnimation()
             startTimerForRectangleStroke()
             showPosibleMoves()
@@ -566,7 +587,7 @@ struct Game: View {
                 rectanglesOnGameField[row][col].haveThunder.toggle()
                 rectanglesOnGameField[row][col].yourThunder = yourTurn
                 if sound {
-                    SoundManager.instance.playSound(sound: "tapSound1")
+                    SoundManager.instance.playSound(sound: "cubeSound")
                 }
                 checkLines()
                 yourTurn.toggle()
@@ -584,7 +605,7 @@ struct Game: View {
                         rectanglesOnGameField[randomeElement.row][randomeElement.col].haveThunder.toggle()
                         rectanglesOnGameField[randomeElement.row][randomeElement.col].yourThunder = yourTurn
                         if sound {
-                            SoundManager.instance.playSound(sound: "tapSound1")
+                            SoundManager.instance.playSound(sound: "cubeSound")
                         }
                         checkLines()
                         yourTurn.toggle()
@@ -606,7 +627,7 @@ struct Game: View {
                 checkLines()
                 yourTurn.toggle()
                 if sound {
-                    SoundManager.instance.playSound(sound: "tapSound1")
+                    SoundManager.instance.playSound(sound: "cubeSound")
                 }
                 print("your step on Stage two")
                 if yourThunderCount > 0 {
@@ -625,7 +646,7 @@ struct Game: View {
                     yourThunderCountOnGameField -= 1
                     checkLines()
                     if sound {
-                        SoundManager.instance.playSound(sound: "tapSound1")
+                        SoundManager.instance.playSound(sound: "cubeSound")
                     }
                     yourTurn.toggle()
                     print("enemy step on Stage two")
@@ -655,7 +676,7 @@ struct Game: View {
                     clearPlate()
                     checkLines()
                     if sound {
-                        SoundManager.instance.playSound(sound: "tapSound1")
+                        SoundManager.instance.playSound(sound: "cubeSound")
                     }
                     yourTurn.toggle()
                     stopWaitingEnamyTimer()
@@ -680,7 +701,7 @@ struct Game: View {
                                 clearPlate()
                                 checkLines()
                                 if sound {
-                                    SoundManager.instance.playSound(sound: "tapSound1")
+                                    SoundManager.instance.playSound(sound: "cubeSound")
                                 }
                                 yourTurn.toggle()
                                 print("yourTurn Toggle by enemy")
@@ -697,7 +718,7 @@ struct Game: View {
             if yourTurn && !rectanglesOnGameField[row][col].haveThunder &&
                 yourStageNumber == 1{
                 if sound {
-                    SoundManager.instance.playSound(sound: "tapSound1")
+                    SoundManager.instance.playSound(sound: "cubeSound")
                 }
                 rectanglesOnGameField[row][col].haveThunder.toggle()
                 rectanglesOnGameField[row][col].yourThunder = yourTurn
@@ -710,7 +731,7 @@ struct Game: View {
             }
             if !yourTurn && !rectanglesOnGameField[row][col].haveThunder && enemyStageNumber == 1{
                 if sound {
-                    SoundManager.instance.playSound(sound: "tapSound1")
+                    SoundManager.instance.playSound(sound: "cubeSound")
                 }
                 rectanglesOnGameField[row][col].haveThunder.toggle()
                 rectanglesOnGameField[row][col].yourThunder = yourTurn
@@ -728,7 +749,7 @@ struct Game: View {
                 rectanglesOnGameField[row][col].haveThunder.toggle()
                 enemyThunderCountOnGameField -= 1
                 if sound {
-                    SoundManager.instance.playSound(sound: "tapSound1")
+                    SoundManager.instance.playSound(sound: "cubeSound")
                 }
                 checkLines()
                 yourTurn.toggle()
@@ -745,7 +766,7 @@ struct Game: View {
                 rectanglesOnGameField[row][col].haveThunder.toggle()
                 yourThunderCountOnGameField -= 1
                 if sound {
-                    SoundManager.instance.playSound(sound: "tapSound1")
+                    SoundManager.instance.playSound(sound: "cubeSound")
                 }
                 checkLines()
                 yourTurn.toggle()
@@ -775,7 +796,7 @@ struct Game: View {
                     clearPlate()
                     checkLines()
                     if sound {
-                        SoundManager.instance.playSound(sound: "tapSound1")
+                        SoundManager.instance.playSound(sound: "cubeSound")
                     }
                     yourTurn.toggle()
                 }
@@ -795,7 +816,7 @@ struct Game: View {
                     clearPlate()
                     checkLines()
                     if sound {
-                        SoundManager.instance.playSound(sound: "tapSound1")
+                        SoundManager.instance.playSound(sound: "cubeSound")
                     }
                     yourTurn.toggle()
                 }

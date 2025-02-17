@@ -87,6 +87,15 @@ struct Options: View {
                 .padding(.trailing, screenWidth*0.3)
             }
         }
+        
+        .onChange(of: music) { _ in
+            if music {
+                SoundManager.instance.playSound(sound: "diceMainSound")
+            } else {
+                SoundManager.instance.stopAllSounds()
+            }
+        }
+        
     }
 }
 

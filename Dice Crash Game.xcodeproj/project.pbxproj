@@ -22,6 +22,11 @@
 		DDEC2D542D5CF7A6003719A0 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D532D5CF7A6003719A0 /* Info.swift */; };
 		DDEC2D562D5CF926003719A0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D552D5CF926003719A0 /* Model.swift */; };
 		DDEC2D582D625932003719A0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC2D572D625932003719A0 /* SoundManager.swift */; };
+		DDEC2D5A2D63893D003719A0 /* diceMainSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEC2D592D63893D003719A0 /* diceMainSound.mp3 */; };
+		DDEC2D5F2D638A90003719A0 /* lineSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEC2D5B2D638A90003719A0 /* lineSound.mp3 */; };
+		DDEC2D602D638A90003719A0 /* cubeSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEC2D5C2D638A90003719A0 /* cubeSound.mp3 */; };
+		DDEC2D612D638A90003719A0 /* failSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEC2D5D2D638A90003719A0 /* failSound.mp3 */; };
+		DDEC2D622D638A90003719A0 /* winSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEC2D5E2D638A90003719A0 /* winSound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,12 @@
 		DDEC2D532D5CF7A6003719A0 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		DDEC2D552D5CF926003719A0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DDEC2D572D625932003719A0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		DDEC2D592D63893D003719A0 /* diceMainSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = diceMainSound.mp3; sourceTree = "<group>"; };
+		DDEC2D5B2D638A90003719A0 /* lineSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lineSound.mp3; sourceTree = "<group>"; };
+		DDEC2D5C2D638A90003719A0 /* cubeSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cubeSound.mp3; sourceTree = "<group>"; };
+		DDEC2D5D2D638A90003719A0 /* failSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = failSound.mp3; sourceTree = "<group>"; };
+		DDEC2D5E2D638A90003719A0 /* winSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winSound.mp3; sourceTree = "<group>"; };
+		DDEC2D632D638DE4003719A0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +86,7 @@
 		DDEC2D292D5BBDA1003719A0 /* Dice Crash Game */ = {
 			isa = PBXGroup;
 			children = (
+				DDEC2D632D638DE4003719A0 /* PrivacyInfo.xcprivacy */,
 				DDEC2D4E2D5BC917003719A0 /* Dice-Crash-Game-Info.plist */,
 				DDEC2D2A2D5BBDA1003719A0 /* Dice_Crash_GameApp.swift */,
 				DDEC2D392D5BBDB0003719A0 /* Views */,
@@ -155,6 +167,11 @@
 		DDEC2D3F2D5BBE90003719A0 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				DDEC2D5C2D638A90003719A0 /* cubeSound.mp3 */,
+				DDEC2D5D2D638A90003719A0 /* failSound.mp3 */,
+				DDEC2D5B2D638A90003719A0 /* lineSound.mp3 */,
+				DDEC2D5E2D638A90003719A0 /* winSound.mp3 */,
+				DDEC2D592D63893D003719A0 /* diceMainSound.mp3 */,
 				DDEC2D572D625932003719A0 /* SoundManager.swift */,
 			);
 			path = Sounds;
@@ -219,8 +236,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDEC2D332D5BBDA2003719A0 /* Preview Assets.xcassets in Resources */,
+				DDEC2D622D638A90003719A0 /* winSound.mp3 in Resources */,
 				DDEC2D4D2D5BC8EF003719A0 /* drukwidecyr-bold.otf in Resources */,
+				DDEC2D5F2D638A90003719A0 /* lineSound.mp3 in Resources */,
+				DDEC2D612D638A90003719A0 /* failSound.mp3 in Resources */,
+				DDEC2D5A2D63893D003719A0 /* diceMainSound.mp3 in Resources */,
 				DDEC2D2F2D5BBDA2003719A0 /* Assets.xcassets in Resources */,
+				DDEC2D602D638A90003719A0 /* cubeSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,8 +407,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -425,8 +447,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Loading: View {
     @EnvironmentObject var coordinator: Coordinator
+    @AppStorage("completeLevel") var completeLevel = false
     @State private var loadingProggress: CGFloat = 0
     @State private var blueCubeScale: CGFloat = 1
     @State private var redCubeScale: CGFloat = 1
@@ -93,14 +94,19 @@ struct Loading: View {
             }
         }
         
+        .onChange(of: completeLevel) { _ in
+            if completeLevel {
+                DispatchQueue.main.asyncAfter(deadline: .now()) {
+                    coordinator.navigate(to: .mainMenu)
+                }
+            }
+        }
+        
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now()) {
                 AppDelegate().setOrientation(to: .landscapeLeft)
             }
            loadingAnimation()
-            DispatchQueue.main.asyncAfter(deadline: .now()) {
-                AppDelegate().setOrientation(to: .landscapeLeft)
-            }
         }
         
     }
@@ -124,9 +130,9 @@ struct Loading: View {
                 loadingProggress = 0
             }
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-            coordinator.navigate(to: .mainMenu)
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+//            coordinator.navigate(to: .mainMenu)
+//        }
     }
     
     func startTimer1() {

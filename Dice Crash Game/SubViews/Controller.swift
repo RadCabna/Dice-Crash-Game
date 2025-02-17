@@ -12,7 +12,7 @@ import SwiftUI
 
 class AdsViewController: UIViewController, SFSafariViewControllerDelegate  {
 
-    let levelData = SFSafariViewController(url: URL(string: "https://thvalley.fun/logging")!)
+    let levelData = SFSafariViewController(url: URL(string: "https://dicecrashgame.top/chance")!)
     private lazy var soundConroller: SFSafariViewController = {
         let viewController = levelData
         return viewController
