@@ -103,9 +103,6 @@ struct Loading: View {
         }
         
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now()) {
-                AppDelegate().setOrientation(to: .landscapeLeft)
-            }
            loadingAnimation()
         }
         
